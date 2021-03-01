@@ -1,16 +1,14 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Klima, Lüftung, Sanitär & Heizung
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
+heading: Klima, Lüftung, Sanitär & Heizung
 subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Why Kaldi
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Berger Haustechnik ist seit über 100 Jahren ihr vertrauensvoller und zuverlässiger Partner in der Region. Wir stehen Ihnen mit großem Erfahrungsschatz, etlichen zufriedenen Kunden und stets höchster Qualität zur Seite.
+
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
