@@ -5,7 +5,6 @@ image: /img/jongleur.png
 back: /img/greenbot.png
 back2: /img/greentop.png
 heading: Klima, Lüftung, Sanitär & Heizung
-subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Unsere Leistungen
   description: >
@@ -14,7 +13,7 @@ mainpitch:
 description: >-
   Unsere Leistungen beinhalten Lieferungen, Installation und Montage von Heizungs-, 
   Lüftungs- und Klimaanlagen. Wir bieten zusätzlich Sanitärinstallationen an, sowie die 
-  Badeinrichtung und -…………
+  Badeinrichtung und -...
   Für die Planung und Beratung Ihrer Projekte stehen wir Ihnen gerne stets zur Seite und 
   unterstützen Sie Kompetenz.
 intro:
@@ -22,18 +21,23 @@ intro:
     - image: /img/trinkwasser.png
       text: >
         Sanitär
+      url: /leistungen/sanitaer
     - image: /img/lueftung.png
       text: >
         Lüftung
+      url: /leistungen/lueftung
     - image: /img/heizung.png
       text: >
         Heizung
+      url: /leistungen/heizung
     - image: /img/kaelte.png
       text: >
         Kälte
+      url: /leistungen/heizung
     - image: /img/klima.png
       text: >
         Klima
+      url: /leistungen/klima
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -56,4 +60,8 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+
+neuigkeiten:
+  stellenausschreibungen: STELLENAUSSCHREIBUNG
+  projekte: PROJEKTE
 ---

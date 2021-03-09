@@ -1,6 +1,6 @@
 ---
 templateKey: "product-page"
-path: /products
+path: /leistungen
 title: Klima, Lüftung, Sanitär & Heizung
 image: /img/jumbotron.jpg
 heading: Klima, Lüftung, Sanitär & Heizung

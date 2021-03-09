@@ -12,7 +12,6 @@ export const IndexPageTemplate = ({
 	back2,
 	title,
 	heading,
-	subheading,
 	mainpitch,
 	description,
 	intro,
@@ -21,7 +20,7 @@ export const IndexPageTemplate = ({
 		<div
 			style={{
 				backgroundImage: `url(${
-					!!back.childImageSharp ? back.childImageSharp.fluid.src : back
+					back.childImageSharp ? back.childImageSharp.fluid.src : back
 				})`,
 				backgroundPosition: `bottom right`,
 				backgroundSize: "100%",
@@ -65,7 +64,7 @@ export const IndexPageTemplate = ({
 						className='column is-12 has-text-centered'
 						style={{ margin: "0% 0 0 0" }}
 					>
-						<Link className='btn bl' to='/products'>
+						<Link className='btn bl is-clickable' to='/leistungen'>
 							Erfahren Sie mehr.
 						</Link>
 					</div>
@@ -76,7 +75,7 @@ export const IndexPageTemplate = ({
 			der mit allen Leistungen in Form von Bällen jongliert.'
 				style={{
 					backgroundImage: `url(${
-						!!image.childImageSharp ? image.childImageSharp.fluid.src : image
+						image.childImageSharp ? image.childImageSharp.fluid.src : image
 					})`,
 					backgroundPosition: `bottom right`,
 					backgroundPositionX: "75%",
@@ -90,7 +89,7 @@ export const IndexPageTemplate = ({
 		<div
 			style={{
 				backgroundImage: `url(${
-					!!back2.childImageSharp ? back2.childImageSharp.fluid.src : back2
+					back2.childImageSharp ? back2.childImageSharp.fluid.src : back2
 				})`,
 				backgroundPosition: `right top`,
 				backgroundPositionY: "-5px",
@@ -141,10 +140,9 @@ export const IndexPageTemplate = ({
 		<div
 			style={{
 				backgroundImage: `url(${
-					!!back.childImageSharp ? back.childImageSharp.fluid.src : back
+					back.childImageSharp ? back.childImageSharp.fluid.src : back
 				})`,
 				backgroundPosition: `right bottom`,
-				//backgroundPositionY: "5px",
 				backgroundSize: "100%",
 				backgroundRepeat: "no-repeat",
 				position: "relative",
@@ -156,7 +154,7 @@ export const IndexPageTemplate = ({
 			<div className='has-text-centered'>
 				<Link
 					className='btn wh'
-					to='/contact'
+					to='/kontakt'
 					style={{
 						marginBottom: "30%",
 					}}
@@ -168,10 +166,10 @@ export const IndexPageTemplate = ({
 		<div
 			style={{
 				backgroundImage: `url(${
-					!!back2.childImageSharp ? back2.childImageSharp.fluid.src : back2
+					back2.childImageSharp ? back2.childImageSharp.fluid.src : back2
 				})`,
-				backgroundPosition: `right bottom`,
-				backgroundPositionY: "-10%",
+				backgroundPosition: `right top`,
+				backgroundPositionY: "-5px",
 				backgroundSize: "100%",
 				backgroundRepeat: "no-repeat",
 				position: "relative",
@@ -187,6 +185,7 @@ export const IndexPageTemplate = ({
 			>
 				Neuigkeiten
 			</h2>
+
 			<BlogRoll />
 			<div className='column is-12 has-text-centered'>
 				<Link className='btn' to='/blog'>
@@ -222,7 +221,6 @@ const IndexPage = ({ data }) => {
 				back2={frontmatter.back2}
 				title={frontmatter.title}
 				heading={frontmatter.heading}
-				subheading={frontmatter.subheading}
 				mainpitch={frontmatter.mainpitch}
 				description={frontmatter.description}
 				intro={frontmatter.intro}
@@ -253,6 +251,7 @@ export const pageQuery = graphql`
 						}
 					}
 				}
+				heading
 				back {
 					childImageSharp {
 						fluid(maxWidth: 3000, quality: 100) {
@@ -267,8 +266,6 @@ export const pageQuery = graphql`
 						}
 					}
 				}
-				heading
-				subheading
 				mainpitch {
 					title
 					description
@@ -284,6 +281,7 @@ export const pageQuery = graphql`
 							}
 						}
 						text
+						url
 					}
 					heading
 					description
