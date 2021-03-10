@@ -117,6 +117,7 @@ export const IndexPageTemplate = ({
 													paddingTop: "25%",
 													color: "white",
 												}}
+												id='leistun'
 											>
 												{mainpitch.title}
 											</h2>
