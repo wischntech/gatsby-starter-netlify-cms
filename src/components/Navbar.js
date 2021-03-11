@@ -65,17 +65,23 @@ const Navbar = class extends React.Component {
 							className={`navbar-burger burger ${this.state.navBarActiveClass}`}
 							data-target='navMenu'
 							onClick={() => this.toggleHamburger()}
+							aria-label='menu'
+							aria-expanded='false'
+							data-target='navbarBasicExample'
 						>
-							<span />
-							<span />
-							<span />
+							<span aria-hidden='true' />
+							<span aria-hidden='true' />
+							<span aria-hidden='true' />
 						</div>
 					</div>
 					<div
 						id='navMenu'
 						className={`navbar-menu ${this.state.navBarActiveClass}`}
 					>
-						<div className='navbar-end has-text-centered'>
+						<div
+							className='navbar-end has-text-centered'
+							aria-label='main navigation'
+						>
 							<Link className='navbar-item' to='#leistun'>
 								Leistungen
 							</Link>
