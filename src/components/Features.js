@@ -11,7 +11,7 @@ const FeatureGrid = ({ gridItems }) => (
 					to={item.url}
 					style={{ width: "auto", height: "100%", display: "block" }}
 				>
-					<section className='section'>
+					<section className='section divleistungen'>
 						<PreviewCompatibleImage
 							imageInfo={item}
 							style={{

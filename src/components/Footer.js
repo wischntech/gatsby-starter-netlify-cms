@@ -60,7 +60,10 @@ const Footer = class extends React.Component {
 											Informationen
 										</h4>
 										<li>
-											<Link className='navbar-item' to='#'>
+											<Link
+												className='navbar-item'
+												to='/stellenausschreibungen'
+											>
 												Stellenausschreibungen
 											</Link>
 										</li>
@@ -70,7 +73,7 @@ const Footer = class extends React.Component {
 											</Link>
 										</li>
 										<li>
-											<Link className='navbar-item' to='/contact/examples'>
+											<Link className='navbar-item' to='/projekte'>
 												Referenzprojekte
 											</Link>
 										</li>
@@ -90,7 +93,7 @@ const Footer = class extends React.Component {
 										</h4>
 										<li>
 											<a href='tel:+493438551287' className='navbar-item'>
-												Kundendienstnummer:{" "}
+												Kundendienstnummer:
 												<span style={{ color: "#cd0000" }}> 034385-51287 </span>
 											</a>
 										</li>
@@ -98,7 +101,10 @@ const Footer = class extends React.Component {
 										<li>
 											<a href='mailto:bht@bergerht.de' className='navbar-item'>
 												E-Mail:
-												<span style={{ color: "#cd0000" }}> bht@bergerht</span>
+												<span style={{ color: "#cd0000" }}>
+													{" "}
+													bht@bergerht.de
+												</span>
 											</a>
 										</li>
 										<li>
@@ -120,11 +126,11 @@ const Footer = class extends React.Component {
 							margin: "auto",
 						}}
 					>
-						<Link className='navbar-item' to='/blog'>
+						<Link className='navbar-item' to='/impressum'>
 							Impressum
 						</Link>
 
-						<Link className='navbar-item' to='/blog'>
+						<Link className='navbar-item' to='/datenschutz'>
 							Datenschutz
 						</Link>
 					</div>

@@ -1,7 +1,7 @@
 ---
 templateKey: "about-page"
 path: /ueberuns
-title: Berger Haustechnikg | Über uns
+title: Über uns
 ---
 
 ### Wir sind Berger Haustechnik

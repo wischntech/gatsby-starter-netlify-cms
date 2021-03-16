@@ -1,5 +1,30 @@
 @import "~bulma/sass/utilities/initial-variables"
 
+@font-face 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/montserrat-v15-latin-regular.eot');
+  src: local(''), url('./fonts/montserrat-v15-latin-regular.eot?#iefix') format('embedded-opentype'), url('./fonts/montserrat-v15-latin-regular.woff2') format('woff2'), url('./fonts/montserrat-v15-latin-regular.woff') format('woff'), url('./fonts/montserrat-v15-latin-regular.ttf') format('truetype'), url('./fonts/montserrat-v15-latin-regular.svg#Montserrat') format('svg'); 
+
+
+@font-face 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/montserrat-v15-latin-600.eot'); 
+  src: local(''), url('./fonts/montserrat-v15-latin-600.eot?#iefix') format('embedded-opentype'), url('./fonts/montserrat-v15-latin-600.woff2') format('woff2'), url('./fonts/montserrat-v15-latin-600.woff') format('woff'), url('./fonts/montserrat-v15-latin-600.ttf') format('truetype'),  url('./fonts/montserrat-v15-latin-600.svg#Montserrat') format('svg'); 
+
+
+@font-face 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/montserrat-v15-latin-700.eot'); 
+  src: local(''), url('./fonts/montserrat-v15-latin-700.eot?#iefix') format('embedded-opentype'), url('./fonts/montserrat-v15-latin-700.woff2') format('woff2'), url('./fonts/montserrat-v15-latin-700.woff') format('woff'), url('./fonts/montserrat-v15-latin-700.ttf') format('truetype'), url('./fonts/montserrat-v15-latin-700.svg#Montserrat') format('svg'); 
+
+
+
 // Config vars
 // Kaldi logo brand color: #CD0000
 $kaldi-red: #C8D930
@@ -15,6 +40,7 @@ $family-primary: 'Montserrat', sans-serif
 .navbar .navbar-menu
   box-shadow:none !important
 
+
 .content .taglist
   list-style: none
   margin-bottom: 0
@@ -29,6 +55,46 @@ $family-primary: 'Montserrat', sans-serif
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
     margin-top: 0
+
+// Überschriftengrößen
+h1  
+  font-size: 2em !important
+  font-weight: 600 !important
+  line-height: 2 !important
+h2  
+  font-size: 1.8em !important
+  line-height: 2 !important
+  font-weight: 600 !important 
+h3
+  font-size: 1.6em !important
+
+  font-weight: 400 !important
+h4 
+  font-size: 1.4em !important
+  line-height: 1.5 
+h5
+  font-size: 1.2em
+  line-height: 1.5
+h6
+  font-size: 1em
+  line-height: 1.5
+  
+
+.divleistungen
+  transition: width height 1s ease
+
+.divleistungen:hover  
+  width: 103%
+  height: 103%
+  div
+    img
+      box-shadow: 0 0 4px 2px #0d0d0d
+      -webkit-box--shadow: 0 0 4px 2px #0d0d0d
+  h3
+    line-weight: 700 !important
+
+
+
 
 // Helper Classes
 .full-width-image-container
@@ -77,7 +143,7 @@ x
   color: #fff
   background-color: #000
   box-shadow: 0 0 4px 2px #f2f2f2
-  -webkit-box--shadow: 0 0 4px 2px #f2f2f2t
+  -webkit-box--shadow: 0 0 4px 2px #f2f2f2
   
 .bl:hover  
     background-color: #fff
@@ -95,6 +161,7 @@ x
 
   
 a
+  color: #cd0000 
   cursor: crosshair !important
 
 a:hover
@@ -160,6 +227,12 @@ $menu-label-color: $white-ter
 .blog-list-item .featured-thumbnail
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
+
+.notification 
+  background-color: white !important
+
+.button
+  border: none !important
 
 
 @import "~bulma"

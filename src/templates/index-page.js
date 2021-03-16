@@ -181,25 +181,36 @@ export const IndexPageTemplate = ({
 			}}
 		></div>
 		<section className='section'>
-			<h2
-				className='has-text-centered has-text-weight-semibold is-size-2'
-				style={{ color: "black", paddingBottom: "30px", lineHeight: "2" }}
-			>
-				Neuigkeiten
-			</h2>
-			<h3 className='has-text-left has-text-weight-semibold is-size-3'>
-				Die neuesten Projekte
-			</h3>
-			<BlogRollProjects />
-			<h3 className='has-text-left has-text-weight-semibold is-size-3'>
-				Stellenausschreibungen
-			</h3>
-
-			<BlogRollJobs />
-			<div className='column is-12 has-text-centered'>
-				<Link className='btn' to='/blog'>
-					Mehr lesen
-				</Link>
+			<div className='container'>
+				<h2
+					className='has-text-centered has-text-weight-semibold is-size-2'
+					style={{ padding: "20px 0 50px 0" }}
+				>
+					Neuigkeiten
+				</h2>
+				<h3 className='has-text-left has-text-weight-semibold is-size-3'>
+					PROJEKTE
+				</h3>{" "}
+				<br />
+				<BlogRollProjects />
+				<div className='column is-12 has-text-centered'>
+					<Link className='btn bl' to='/projekte'>
+						Alle Projekte
+					</Link>{" "}
+				</div>
+				<br /> <br />
+				<hr style={{ color: "#cccccc !important" }} />
+				<br /> <br />
+				<h3 className='has-text-left has-text-weight-semibold is-size-3'>
+					STELLENAUSSCHREIBUNGEN
+				</h3>
+				<br />
+				<BlogRollJobs />
+				<div className='column is-12 has-text-centered'>
+					<Link className='btn bl' to='/stellenausschreibungen'>
+						Alle Stellenausschreibungen
+					</Link>
+				</div>
 			</div>
 		</section>
 	</div>
